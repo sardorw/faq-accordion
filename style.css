@@ -1,0 +1,133 @@
+:root {
+  --light-pink-color: #f9f0ff;
+  --grayish-purple-color: #8c6991;
+  --dark-purple-color: #2f1533;
+  --purple-color: #ac24ea;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--dark-purple-color);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 24px;
+  background-image: url('./images/background-pattern-mobile.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: var(--light-pink-color);
+}
+
+.wrapper {
+  width: 100%;
+  padding: 24px;
+  border-radius: 8px;
+  background-color: white;
+}
+
+.heading__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.heading__wrapper img {
+  width: 24px;
+}
+
+.heading {
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.accordion__wrapper {
+  margin-top: 24px;
+}
+
+.accordion {
+  padding: 20px 0;
+}
+
+.accordion:first-child {
+  padding-top: 0;
+}
+
+.accordion:last-child {
+  padding-bottom: 0;
+}
+
+.accordion:not(:first-child) {
+  border-top: 2px solid var(--light-pink-color);
+}
+
+.accordion button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: left;
+  cursor: pointer;
+}
+
+.accordion button:hover {
+  color: var(--purple-color);
+}
+
+.accordion p {
+  margin-top: 24px;
+  font-size: 14px;
+  color: var(--grayish-purple-color);
+}
+
+@media all and (min-width: 600px) {
+  body {
+    background-image: url('./images/background-pattern-desktop.svg');
+  }
+
+  .wrapper {
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 16px;
+  }
+
+  .heading__wrapper img {
+    width: 40px;
+  }
+
+  .heading {
+    font-size: 56px;
+  }
+
+  .accordion__wrapper {
+    margin-top: 32px;
+  }
+
+  .accordion button {
+    font-size: 18px;
+  }
+
+  .accordion {
+    padding: 24px 0;
+  }
+
+  .accordion p {
+    font-size: 16px;
+  }
+}

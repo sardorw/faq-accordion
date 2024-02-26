@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>FAQ accordion | Frontend Mentor</title>
+  </head>
+  <body>
+    <main class="wrapper">
+      <div class="heading__wrapper">
+        <img src="./images/icon-star.svg" alt="Start icon" />
+        <h1 class="heading">FAQs</h1>
+      </div>
+
+      <div class="accordion__wrapper">
+        <div class="accordion">
+          <button
+            type="button"
+            aria-expanded="true"
+            aria-controls="accordion1-content"
+            id="accordion1-header"
+            data-accordion-header
+          >
+            What is Frontend Mentor, and how will it help me?
+            <img src="./images/icon-minus.svg" alt="Minus icon" />
+          </button>
+          <p
+            aria-labelledby="accordion1-header"
+            id="accordion1-content"
+            role="region"
+          >
+            Frontend Mentor offers realistic coding challenges to help
+            developers improve their frontend coding skills with projects in
+            HTML, CSS, and JavaScript. It's suitable for all levels and ideal
+            for portfolio building.
+          </p>
+        </div>
+        <div class="accordion">
+          <button
+            type="button"
+            aria-expanded="false"
+            aria-controls="accordion2-content"
+            id="accordion2-header"
+            data-accordion-header
+          >
+            Is Frontend Mentor free?
+            <img src="./images/icon-plus.svg" alt="Plus icon" />
+          </button>
+          <p
+            aria-labelledby="accordion2-header"
+            id="accordion2-content"
+            role="region"
+            hidden
+          >
+            Yes, Frontend Mentor offers both free and premium coding challenges,
+            with the free option providing access to a range of projects
+            suitable for all skill levels.
+          </p>
+        </div>
+        <div class="accordion">
+          <button
+            type="button"
+            aria-expanded="false"
+            aria-controls="accordion3-content"
+            id="accordion3-header"
+            data-accordion-header
+          >
+            Can I use Frontend Mentor projects in my portfolio?
+            <img src="./images/icon-plus.svg" alt="Plus icon" />
+          </button>
+          <p
+            aria-labelledby="accordion3-header"
+            id="accordion3-content"
+            role="region"
+            hidden
+          >
+            Yes, you can use projects completed on Frontend Mentor in your
+            portfolio. It's an excellent way to showcase your skills to
+            potential employers!
+          </p>
+        </div>
+        <div class="accordion">
+          <button
+            type="button"
+            aria-expanded="false"
+            aria-controls="accordion4-content"
+            id="accordion4-header"
+            data-accordion-header
+          >
+            How can I get help if I'm stuck on a challenge?
+            <img src="./images/icon-plus.svg" alt="Plus icon" />
+          </button>
+          <p
+            aria-labelledby="accordion4-header"
+            id="accordion4-content"
+            role="region"
+            hidden
+          >
+            The best place to get help is inside Frontend Mentor's Discord
+            community. There's a help channel where you can ask questions and
+            seek support from other community members.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
